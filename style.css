@@ -1,0 +1,75 @@
+body{
+    background-color: skyblue;
+    color: rgb(12, 12, 12);
+}
+nav>ul {
+    display: flex;
+}
+
+nav li {
+    list-style: none;
+    margin-right: 1em;
+    
+}
+
+nav li a {
+    text-decoration: none;
+    color: black;
+color: rgb(12, 12, 11);
+
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    background-color: lightyellow;
+}
+
+nav>ul>li:hover>.dropdown {
+    display: block;
+}
+
+nav>ul>li:hover>.dropdown.mega-menu {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 2em;
+}
+
+.mega-menu h3 {
+    font-size: 16px;
+    color: rgb(77, 77, 64);
+    margin-bottom: 0;
+}
+p {
+    border: 2px solid rgb(214, 30, 9);
+}
+        .admission {
+            display: flex;
+            justify-content: center;
+        }
+
+        .admission-form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* select by attribute */
+        input[type="text"] {
+            border: 1px solid green;
+        }
+
+        input[type="password"] {
+            border: 1px solid red;
+        }
+
+        /* Select all input tags where type is not checkbox */
+        input:not([type="checkbox"]) {
+            font-size: 1.2em;
+        }
+        .btn{
+            margin-top: 15px;
+            width: 80px;
+            color: aliceblue;
+            background-color: rgb(51, 39, 219);
+            border-radius: 5px;
+        }
